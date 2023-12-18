@@ -69,12 +69,12 @@ namespace bdd.workshop.calculator.tests.tdd.steps
             _scenarioContext.Add("Result", Operator.Divide(firstNumber, secondNumber));
         }
 
-        [When(@"Hago la raiz del primer número con índice del segundo")]
-        public void WhenISquareFirstNumberByIndexSecondNumber()
+        [When(@"I Root first number by base of second number")]
+        public void WhenIRootFirstNumberByBaseOfSecondNumber()
         {
             var firstNumber = _scenarioContext.Get<int>("FirstNumber");
             var secondNumber = _scenarioContext.Get<int>("SecondNumber");
-            _scenarioContext.Add("Result", Operator.Divide(firstNumber, secondNumber));
+            _scenarioContext.Add("Result", Operator.CalcularRaiz(firstNumber, secondNumber));
         }
 
         [Then(@"the result is (.*)")]

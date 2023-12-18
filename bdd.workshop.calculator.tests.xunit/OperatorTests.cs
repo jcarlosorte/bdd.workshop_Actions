@@ -88,9 +88,9 @@ namespace bdd.workshop.calculator.tests.xunit
         [Trait("TestType", "UT")]
         public void CalcularRaizTheory()
         {
-            int numero = 9;
+            int numero = 4;
             int indice = 2;
-            double result = 3;
+            double result = 2;
             Assert.True(Operator.CalcularRaiz(numero, indice) == result);
         }
     }

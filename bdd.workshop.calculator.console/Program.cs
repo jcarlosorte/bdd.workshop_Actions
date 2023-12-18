@@ -23,8 +23,11 @@ namespace bdd.workshop.calculator.console
                 case ("/"):
                     Console.WriteLine(Operator.Divide(a, b));
                     break;
+                case ("sq"):
+                    Console.WriteLine(Operator.CalcularRaiz(a, b));
+                    break;
                 default:
-                    Console.WriteLine("Possible operators: +,-,x,/: i.e.: 3 + 4");
+                    Console.WriteLine("Possible operators: +,-,x,/,sq: i.e.: 3 + 4");
                     break;
             }
         }

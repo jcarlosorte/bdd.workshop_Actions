@@ -10,7 +10,7 @@ namespace bdd.workshop.calculator.test.selenium
     {
         private void EvaluateOperation(int a, int b, string operation, double result)
         {
-            const string calculatorUrl = "https://bdd-workshop-the-calculator.azurewebsites.net/Calculator";
+            const string calculatorUrl = "https://bddworkshopcalculatorwebdsejerciciobloque3ugr.azurewebsites.net/Calculator";
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 
             // Definir los XPaths

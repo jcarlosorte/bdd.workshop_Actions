@@ -12,7 +12,7 @@ namespace bdd.workshop.calculator.test.selenium
 {
     public class NumberPropertiesTests : WebBrowser
     {
-        private const string CalculatorUrl = "https://bdd-workshop-the-calculator.azurewebsites.net/NumberProperties";
+        private const string CalculatorUrl = "https://bddworkshopcalculatorwebdsejerciciobloque3ugr.azurewebsites.net/NumberProperties";
         private const string NumberXPath = @"//input[@id='TheNumber']";
         private const string SubmitButtonXPath = "//input[@type='submit']";
         private const string IsPrimeNumberXPath = "//td[@id='isPrimeNumber']";

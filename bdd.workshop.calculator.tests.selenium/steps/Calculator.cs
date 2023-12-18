@@ -18,7 +18,7 @@ namespace bdd.workshop.calculator.tests.selenium.steps
             var bXpath = "//input[@id='B_TheNumber']";
             var cmdXpath = "//input[@id='Command']";
             var submitButton = "//input[@type='submit']";
-            Driver.Url = "https://bdd-workshop-the-calculator.azurewebsites.net/Calculator";
+            Driver.Url = "https://bddworkshopcalculatorwebdsejerciciobloque3ugr.azurewebsites.net/Calculator";
             var inputA = FindElement(aXpath, wait);
             var inputCmd = FindElement(cmdXpath, wait);
             var inputB = FindElement(bXpath, wait);
@@ -92,12 +92,12 @@ namespace bdd.workshop.calculator.tests.selenium.steps
             _scenarioContext.Add("Result", EvaluateOperation(firstNumber, secondNumber, "/"));
         }
 
-        [When(@"Hago la raiz del primer número con índice del segundo")]
-        public void WhenISquareFirstNumberByIndexSecondNumber()
+        [When(@"I Root first number by base of second number")]
+        public void WhenIRootFirstNumberByBaseOfSecondNumber()
         {
             var firstNumber = _scenarioContext.Get<int>("FirstNumber");
             var secondNumber = _scenarioContext.Get<int>("SecondNumber");
-            _scenarioContext.Add("Result", EvaluateOperation(firstNumber, secondNumber, "/"));
+            _scenarioContext.Add("Result", EvaluateOperation(firstNumber, secondNumber, "sq"));
         }
 
         [Then(@"the result is (.*)")]

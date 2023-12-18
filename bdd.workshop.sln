@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator", "bdd.workshop.calculator\bdd.workshop.calculator.csproj", "{1C966E01-CE44-419E-A227-39E9797E84D1}"
 EndProject

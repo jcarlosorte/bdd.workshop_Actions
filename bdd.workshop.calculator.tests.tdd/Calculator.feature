@@ -34,3 +34,8 @@ Scenario: Division of two numbers returning non integer value
 	When I divide first number by second number
 	Then the result is 2.5
 	
+Scenario: Root of a number to the base of the second
+	Given the first number is 27
+	And the second number is 3
+	When I Root first number by base of second number
+	Then the result is 3

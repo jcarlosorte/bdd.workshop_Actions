@@ -43,4 +43,11 @@ Scenario: Division of two numbers returning non integer value
 	Then the result is 2.5
 	And displayed first name is 10
 	And displayed second name is 4
-	
+
+Scenario: Root of a number to the base of the second
+	Given the first number is 27
+	And the second number is 3
+	When I Root first number by base of second number
+	Then the result is 3
+	And displayed first name is 27
+	And displayed second name is 3

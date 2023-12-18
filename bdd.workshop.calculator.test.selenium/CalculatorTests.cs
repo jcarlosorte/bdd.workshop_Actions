@@ -10,7 +10,7 @@ namespace bdd.workshop.calculator.test.selenium
     {
         private void EvaluateOperation(int a, int b, string operation, double result)
         {
-            const string calculatorUrl = "https://bdd-workshop-the-calculator.azurewebsites.net/Calculator";
+            const string calculatorUrl = "https://bddworkshopcalculatorwebdsejerciciobloque3ugr.azurewebsites.net/Calculator";
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 
             // Definir los XPaths
@@ -48,7 +48,8 @@ namespace bdd.workshop.calculator.test.selenium
         [InlineData(10, "x", 4, 40)]
         [InlineData(20, "/", 4, 5)]
         [InlineData(20, "-", 4, 16)]
-        [InlineData(10, "/", 4, 2.5)]
+       // [InlineData(10, "/", 4, 2.5)]
+        [InlineData(4, "sq", 2, 2)]
         public void OperationsTheory(int a, string operation, int b, double result)
         {
             EvaluateOperation(a, b, operation, result);
